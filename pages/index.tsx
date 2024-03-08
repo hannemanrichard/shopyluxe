@@ -238,6 +238,7 @@ export default function Home() {
           setFormErr(false);
         } else {
           setCookie("is-submitted", true, { maxAge: 60 * 60 * 3 });
+
           fetch(
             `https://graph.facebook.com/v18.0/${process.env.NEXT_PUBLIC_FACEBOOK_PIXEL_ID}/events?access_token=${process.env.NEXT_PUBLIC_FBACCESSKEY}`,
             {
@@ -253,8 +254,12 @@ export default function Home() {
                     event_id: eventId,
                     action_source: "website",
                     user_data: {
-                      fn: [[sha256(fullName)]],
-                      ph: [[sha256(number)]],
+                      fn: [sha256(fullName)],
+                      ph: [sha256(number)],
+                    },
+                    custom_data: {
+                      currency: "USD",
+                      value: "12",
                     },
                   },
                 ],
@@ -264,7 +269,7 @@ export default function Home() {
           )
             .then((response) => response.json())
             .then((data) => console.log(data))
-            .catch((error) => console.error("Error:", error));
+            .catch((error) => console.error("Error api:", error));
           setIsSubmitted(true);
           router.push("/thankyou");
         }
