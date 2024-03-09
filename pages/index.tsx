@@ -32,8 +32,8 @@ export default function Home() {
   const [size, setSize] = useState("l");
   const [model, setModel] = useState(1);
   const [isSubmitted, setIsSubmitted] = useState(false);
-  const [eventId, setEventId] = useState("");
-  const [testEventCode, setTestEventCode] = useState("");
+  const [eventId, setEventId] = useState("event_id_123");
+  const [testEventCode, setTestEventCode] = useState("TEST123");
 
   useEffect(() => {
     const isSubmittedTemp = getCookie("is-submitted") ? true : false;
