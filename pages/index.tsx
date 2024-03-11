@@ -263,7 +263,6 @@ export default function Home() {
                     },
                   },
                 ],
-                test_event_code: testEventCode,
               }),
             }
           )
