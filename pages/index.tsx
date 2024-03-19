@@ -361,7 +361,7 @@ export default function Home() {
               {" "}
               تصاميم فريدة بألوان متنوعة، مثالية لكل المناسبات
             </p>
-            <p className=" text-center   bg-gray-100 rounded-xl py-2 mt-1">
+            <p className="text-lg text-center mt-1">
               (tissu en daim)
               
             </p> 
