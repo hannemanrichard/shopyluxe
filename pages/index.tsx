@@ -385,7 +385,7 @@ export default function Home() {
                       alt=""
                     />
                   </button>
-                  <button onClick={() => setPreviewImage("bleu-03.jpg")}>
+                  {/* <button onClick={() => setPreviewImage("bleu-03.jpg")}>
                     <Image src="/bleu-03.jpg" width={128} height={160} alt="" />
                   </button>
                   <button onClick={() => setPreviewImage("beige-01.jpg")}>
@@ -395,7 +395,7 @@ export default function Home() {
                       height={160}
                       alt=""
                     />
-                  </button>
+                  </button> */}
                   <button onClick={() => setPreviewImage("noir-05.jpg")}>
                     <Image src="/noir-05.jpg" width={128} height={160} alt="" />
                   </button>
@@ -440,7 +440,7 @@ export default function Home() {
                   alt=""
                 />
 
-                <Image
+                {/* <Image
                   height={510}
                   width={382}
                   src="/bleu-01.jpg"
@@ -474,7 +474,7 @@ export default function Home() {
                   src="/bleu-02.jpg"
                   className="my-3"
                   alt=""
-                />
+                /> */}
                 <Image
                   height={510}
                   width={382}
@@ -532,7 +532,7 @@ export default function Home() {
                       alt=""
                     />
                   </button>
-                  <button onClick={() => setPreviewImage("bleu-03.jpg")}>
+                  {/* <button onClick={() => setPreviewImage("bleu-03.jpg")}>
                     <Image src="/bleu-03.jpg" width={128} height={160} alt="" />
                   </button>
                   <button onClick={() => setPreviewImage("beige-01.jpg")}>
@@ -542,7 +542,7 @@ export default function Home() {
                       height={160}
                       alt=""
                     />
-                  </button>
+                  </button> */}
                   <button onClick={() => setPreviewImage("noir-05.jpg")}>
                     <Image src="/noir-05.jpg" width={128} height={160} alt="" />
                   </button>
@@ -626,7 +626,7 @@ export default function Home() {
                                   className="rounded-lg"
                                 />
                               </div>
-                              <div
+                              {/* <div
                                 onClick={() => handleUpdateModel(3)}
                                 className={`flex cursor-pointer  p-1 border-2  hover:border-amber-500 w-16 h-16 rounded-lg ${
                                   model === 3
@@ -657,7 +657,7 @@ export default function Home() {
                                   alt=""
                                   className="rounded-lg"
                                 />
-                              </div>
+                              </div> */}
                             </div>
                           </div>
                           <div>
@@ -921,7 +921,7 @@ export default function Home() {
                   alt=""
                 />
 
-                <Image
+                {/* <Image
                   height={510}
                   width={382}
                   src="/bleu-01.jpg"
@@ -955,7 +955,7 @@ export default function Home() {
                   src="/bleu-02.jpg"
                   className="my-3"
                   alt=""
-                />
+                /> */}
                 <Image
                   height={510}
                   width={382}
